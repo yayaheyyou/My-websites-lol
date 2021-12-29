@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+	<title>Simple Speed Typer</title>
+    <link rel="icon" href="https://img-premium.flaticon.com/png/128/4175/premium/4175957.png?token=exp=1633548731~hmac=9de9179c4c66873655ccf31417b2be04" data-src="https://img-premium.flaticon.com/png/128/4175/premium/4175957.png?token=exp=1633548731~hmac=9de9179c4c66873655ccf31417b2be04" alt="Keyboard free icon" title="Keyboard free icon" width="64" height="64" class="lzy lazyload--done" srcset="https://img-premium.flaticon.com/png/128/4175/premium/4175957.png?token=exp=1633548731~hmac=9de9179c4c66873655ccf31417b2be04 4x">
+	<!-- CSS file-->
+	<link rel="stylesheet" href="WPM test.css">
+</head>
+<body>
+<div class="container">
+	<div class="heading">
+	WPM Test!
+	</div>
+	<div class="header">
+	<div class="wpm">
+		<div class="header_text">WPM</div>
+		<div class="curr_wpm">100</div>
+	</div>
+	<div class="cpm">
+		<div class="header_text">CPM</div>
+		<div class="curr_cpm">100</div>
+	</div>
+	<div class="errors">
+		<div class="header_text">Errors</div>
+		<div class="curr_errors">0</div>
+	</div>
+	<div class="timer">
+		<div class="header_text">Time</div>
+		<div class="curr_time">60s</div>
+	</div>
+	<div class="accuracy">
+		<div class="header_text">% Accuracy</div>
+		<div class="curr_accuracy">100</div>
+	</div>
+	</div>
+
+	<div class="quote">
+	Click on the area below to start the game.
+	</div>
+	<textarea class="input_area"
+	placeholder="start typing here..."
+	oninput="processCurrentText()"
+	onfocus="startGame()">
+	</textarea>
+	<button class="restart_btn"
+	onclick="resetValues()">
+	Restart
+	</button>
+</div>
+
+<!--Java script file-->
+<script src="WPM test.js">
+</script>
+</body>
+</html>

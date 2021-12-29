@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+  /*
+  Main styles
+  */
+  
+#no {
+ position: absolute;
+ left: 10px;
+ top: 40px;
+}
+#hi {
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#popup {
+    display:none;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    font-size: 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 20px solid gray;
+    background-color:rgb(33, 82, 146);
+}
+#popup-open {
+  position: absolute;
+    left:10px;
+    top: 200px;
+}
+/*
+styling "hi"s
+*/
+#hi2 {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#hi3 {
+    display: none;
+    position: absolute;
+    left: 300px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#hi4 {
+    display: none;
+    position: absolute;
+    left: 400px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#hi5 {
+    display: none;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#hi6 {
+    display: none;
+    position: absolute;
+    left: 600px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#hi7 {
+    display: none;
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                  rgba(0, 0, 0, .2),
+                  rgba(0, 0, 0, .2) 30%,
+                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+/*
+body id for JS 
+*/
+#body {
+  display: block;
+}
+</style>
+</head>
+<body id="body">      
+  <!--Main--> 
+<button id="yes"></button>
+<button id="no"></button>
+<button id="hi" onclick="myFunction3()"></button>
+<button id="hi2" onclick="myFunction4()"></button>
+<button id="hi3" onclick="myFunction5()"></button>
+<button id="hi4" onclick="myFunction6()"></button>
+<button id="hi5" onclick="myFunction7()"></button>
+<button id="hi6" onclick="myFunction8()"></button>
+<button id="hi7" onclick="myFunction9()"></button>
+<button id="popup-open" onclick="myFunction2()"></button>
+<button onclick="myFunction()" style="text-align:center;">Click to show the hidden text </button>
+<div id="popup">
+</div>
+
+    <script>
+      // defining elements
+        document.getElementById("yes").innerHTML="yes";
+        document.getElementById("no").innerHTML="no";
+        document.getElementById("popup").innerHTML="hi";
+        document.getElementById("popup-open").innerHTML="popup show = not shown";
+        // on click changing to "no"
+        document.getElementById("yes").onclick=function() {
+            document.getElementById("yes").innerHTML="no"
+        }
+        //on click changing to "yes"
+        document.getElementById("no").onclick=function() {
+            document.getElementById("no").innerHTML="yes"
+            }
+            // if element's display is set to "none" it'll change to "block"
+            function myFunction() {
+      var x = document.getElementById("hi");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // if element's display is set to "block" it'll change to "none"
+    function myFunction() {
+      var x = document.getElementById("hi");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    // if popup button is clicked a popup will show
+    function myFunction2() {
+      var x = document.getElementById("popup");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    document.getElementById("popup-open").innerHTML="popup show = shown";
+    }
+    // defining "hi"s
+        document.getElementById("hi").innerHTML="hi";
+        document.getElementById("hi2").innerHTML="hi";
+        document.getElementById("hi3").innerHTML="hi";
+        document.getElementById("hi4").innerHTML="hi";
+        document.getElementById("hi5").innerHTML="hi";
+        document.getElementById("hi6").innerHTML="hi";
+        document.getElementById("hi7").innerHTML="hi";
+    // continuis function (1)
+    function myFunction3() {
+      var x = document.getElementById("hi2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (2)
+    function myFunction4() {
+      var x = document.getElementById("hi3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (3)
+    function myFunction5() {
+      var x = document.getElementById("hi4");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (4)
+    function myFunction6() {
+      var x = document.getElementById("hi5");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (5)
+    function myFunction7() {
+      var x = document.getElementById("hi6");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (6)
+    function myFunction8() {
+      var x = document.getElementById("hi7");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    // continuis function (7)
+    function myFunction9() {
+      var x = document.getElementById("body");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    </script>
+</body>
+</html>

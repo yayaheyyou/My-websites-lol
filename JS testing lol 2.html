@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startAnimation()">
+yes
+    </button>
+    <style>
+        #div {
+         display:block;
+         color: red;
+        }
+        p {
+            color: pink;
+        }
+    </style>
+    <div id="div1">
+yes
+    </div>
+    <input type="text" id="demo" value="copy me!">
+    <p id="p2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim rerum fugiat vero corrupti omnis ex, officiis ipsam obcaecati facere ducimus placeat minus laudantium maxime neque eveniet porro saepe. At, accusamus!
+    </p>
+    <script>
+        // idk
+        var x = 3+3*0;
+        document.write(x)
+        // the big deal
+        function startAnimation(){
+          var x = document.getElementById("div1")
+          if (x.style.color === "red") {
+              x.style.color = "blue"
+          } else {
+              x.style.color = "red"
+          }
+        }
+        function endAnimation() {
+            var x = document.getElementById("p2")
+            if (x.style.color === "pink"  ) {
+                x.style.color = "red"
+            } else {
+                x.style.color = "pink"
+            }
+        }
+document.getElementById("demo").addEventListener("copy", endAnimation);      
+        // declaring variables
+        let r = startAnimation();
+        let y = startAnimation
+    </script>
+</body>
+</html>
