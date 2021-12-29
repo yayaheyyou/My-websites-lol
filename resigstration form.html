@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+<style>
+input[type=text], select {
+  width: 100px;
+  padding: 5px;
+  padding-right: 290px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#div1 {
+  border: 1px solid black;
+  border-width:1px ;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 500px;
+  margin-right: 520px;
+  width: 480px;
+  background-color: cyan;
+  height: 200px;
+}
+#div2 {
+  border:1px solid black;
+  border-width: 1px;
+  margin-left: 20px;
+  width: 100px;
+  position: fixed;
+  bottom: 508px;
+  right: 750px ;
+}
+#div3 {
+  border:1px solid black;
+  margin-left: 200px;
+  width: 100px;
+  position: fixed;
+  bottom: 465px;
+  right: 750px ;
+}
+#div4 {
+  border:1px solid black;
+  margin-left: 200px;
+  width: 100px;
+  position: fixed;
+  bottom: 423px;
+  right: 750px ;
+}
+#div5 {
+  border: 1px solid black;
+  width: 100px;
+  position: fixed;
+  right: 750px ;
+  bottom: 380px;
+}
+#div6 {
+  border: 1px solid black ;
+  width:200px;
+  position: fixed;
+  right: 520px;
+  bottom: 340px;
+}
+#text-box-div1 {
+ border: 1px solid black ;
+ width: 400px ;
+ position: fixed;
+ right: 397px;
+}
+#text-box-div2 {
+ position: fixed;
+  bottom:453px;
+  right: 450px;
+}
+#text-box-div3 {
+ position: fixed;
+ bottom: 412px ;
+ right: 450px;
+}
+</style>
+<body style="text-align: center;">
+
+<h1> Registration Form </h1>
+
+<div id="div1">
+  <form>
+    <div id="div2">
+    <label for="name" style="padding-right: 5px; padding-left: 5px;">Name:</label>
+    <br>
+    </div>
+    <div id="text-box-div1">
+    <input type="text" id="name" name="name">
+    <br>
+    </div>
+    <div id="div3">
+    <label for="Email" style="padding-right: 5px; padding-left: 5px;">Email:</label>
+    </div>
+    <div id="text-box-div2">
+    <input type="text" id="email" name="email">
+    <br> 
+    </div>
+    <div id="div4">
+    <label for="Pass" style="padding-right: 5px; padding-left: 5px;">Password:</label>
+    </div>
+    <div id="text-box-div3">
+    <input type="text" id="pass" name="pass">
+    <br>
+    </div>
+    <div id="div5">
+    <label style="font-size: 17px;"> Interests: </label><br>
+    </div>
+            <div id="div6">
+            <input type="checkbox" id="option1" name="option1" value="reading">
+            <label for="option1" style="font-size: 17px;">  Reading  </label> <br> 
+            <input type="checkbox" id="option2" name="option2" value="swimming">
+            <label for="option2" style="font-size: 17px;"> Swimming </label><br>
+            <input type="checkbox" id="option3" name="option3" value="eating">
+            <label for="option3" style="font-size: 17px;"> Eating </label>
+            </div>
+  </form>
+</div>
+</body>
+</html>

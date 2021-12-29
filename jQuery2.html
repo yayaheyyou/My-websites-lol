@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./../Javascript/jQuery 3.5.1-min.js"></script>
+    <script>
+    $('document').ready(function(){
+    var FirstColor = $('#Color1').val;
+    var SecondColor = $('#Color2').val;
+    var ThirdColor = $('#Color3').val;
+    var Dir = $('#Dir').val;
+    var Type = $('#Type').val;
+
+    $('#Change').click(function(){
+    $(body).css({
+    background: 'linear-gradient(' + Dir + ',' + FirstColor + ',' + SecondColor + ',' + ThirdColor + ')'
+    });
+    });
+    });
+
+
+
+
+
+</script>
+</head>
+<body id = "body">
+
+<label>Linear-Gradinet: </label>
+<input type = "text" placeholder="Direction..." size = "7" id = "Dir"></input>
+<input type = "color" placeholder="First Color..." size = "7" id = "Color1"></input>
+<input type = "color" placeholder="Second Color..." size = "7" id = "Color2"></input>
+<input type = "color" placeholder="Third Color..." size = "7" id = "Color3"></input>
+<input type = "text" placeholder="Type..." size = "7" id = "Type"></input>
+
+<button id = "Change"> Change. </button>
+
+
+
+
+
+</body>
+</html>

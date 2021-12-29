@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+#text {display:none;color:red}
+</style>
+<body>
+
+<h3>Detect Caps Lock</h3>
+
+<input id="myInput" value="Some text..">
+<p id="text">WARNING! Caps lock is ON.</p>
+
+<script>
+var input = document.getElementById("myInput");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the radio button to toggle between password visibility:</p>
+
+Password: <input type="password" value="FakePSW" id="mYInput"><br><br>
+<input type="checkbox" onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mYInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

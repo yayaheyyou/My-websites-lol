@@ -1,0 +1,205 @@
+<html>
+<head>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/128/3524/3524636.png">
+    <title>Settings</title>
+</head>
+<body>
+   <!--Styling stuff lol-->
+
+   <style>
+    input[type=search] {
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('../../yaya\'s\ folder/searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+      position: absolute;
+      top: 0px;
+      left:240px;
+    }
+    
+    input[type=search]:focus {
+      width: 30%;
+    }
+    #homepage {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    #profile {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+    }
+    #settings {
+        position: absolute;
+        top: 0px;
+        left: 160px;
+    }
+    #login-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+     }
+    .container-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-bottom: 34px;
+    width: 1366px;
+     }
+     #registration-icon {
+     position: absolute;
+     top: 0px;
+     right: 60px;
+      }
+      body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode-toggle-icon:hover {
+opacity: 0.8;
+}
+.dark-mode-toggle-icon {
+background-color:#ccc;
+position: absolute;
+top:50px;
+left: 1286px;
+}
+
+.container-2 {
+  padding: 16px;
+
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+h1 {
+  color: lightgrey;
+}
+p {
+  color: lightgrey;
+}
+label {
+  color: lightgrey
+}
+#ConfirmChangesbtn {
+  background-color: #04AA6D;
+  color: white;
+  position: absolute;
+  left:00px;
+  top: 500px;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+#ConfirmChangesbtn:hover {
+  opacity:1;
+}
+        </style>
+    
+    <!--Actually making things-->
+    <div class="container-1" style="background-color: #ccc;">
+    <form>
+        <input type="search" name="search" placeholder="Search..">
+      </form>
+    
+      <div id="profile">
+          <a href="file:///C:/Users/ascom/Desktop/html%20stuff%20yes/Me%20trying%20to%20learn%20new%20things/idk%202.html">
+        <img src="https://image.flaticon.com/icons/png/128/14/14660.png" data-src="https://image.flaticon.com/icons/png/128/14/14660.png" alt="User profile" title="User profile" width="45" height="45" class="lzy lazyload--done" srcset="https://image.flaticon.com/icons/png/128/14/14660.png 4x">
+      </a>
+    </div>
+    <div id="settings">
+        <a href="file:///C:/Users/ascom/Desktop/html%20stuff%20yes/Me%20trying%20to%20learn%20new%20things/try%202.html">
+          <img src="https://image.flaticon.com/icons/png/128/3524/3524636.png" data-src="https://image.flaticon.com/icons/png/128/3524/3524636.png" alt="Settings" title="Settings" width="45" height="45" class="lzy lazyload--done" srcset="https://image.flaticon.com/icons/png/128/3524/3524636.png 4x">
+        </a>
+    </div>
+    <div id="homepage">
+        <a href="idk.html">
+        <img src="https://image.flaticon.com/icons/png/128/66/66760.png" data-src="https://image.flaticon.com/icons/png/128/66/66760.png" alt="Homepage" title="Homepage" width="45" height="45" class="lzy lazyload--done" srcset="https://image.flaticon.com/icons/png/128/66/66760.png 4x">
+    </a>
+    </div>
+    <div id="login-icon">
+        <a href="idk 3.html">
+        <img src="https://image.flaticon.com/icons/png/128/3580/3580168.png" data-src="https://image.flaticon.com/icons/png/128/3580/3580168.png" alt="Login" title="Login" width="45" height="45" class="lzy lazyload--done" srcset="https://image.flaticon.com/icons/png/128/3580/3580168.png 4x">
+    </a>
+    <a href="idk 4.html">
+        <div id="registration-icon">
+          <img src="https://image.flaticon.com/icons/png/128/2921/2921087.png" data-src="https://image.flaticon.com/icons/png/128/2921/2921087.png" alt="Register" title="Edit free icon" width="45" height="45" class="lzy lazyload--done" srcset="https://image.flaticon.com/icons/png/128/2921/2921087.png 4x">
+        </a>
+        </div>
+    </div>
+    </div>
+    <button onclick="myFunction()" class="dark-mode-toggle-icon">
+      <img src="https://image.flaticon.com/icons/png/128/4893/4893584.png" data-src="https://image.flaticon.com/icons/png/128/4893/4893584.png" srcset="https://image.flaticon.com/icons/png/128/4893/4893584.png 4x" alt="Night mode" title="Night mode" width="64" height="64" class="lzy lazyload--done"></button>
+      <!--The javascript code for dark mode toggle-->
+      <script src="../Me trying to learn new things/Java script file for dark mode.js"></script> 
+      <form>
+        <div class="container-2">
+          <h1>Settings</h1>
+          <p>The following options will change the look of the page.</p>
+          <hr>
+      
+          <label for="email"><b>Username</b></label>
+          <input type="text" placeholder="Enter New Username..." required>
+      
+          <label for="psw"><b>Change Password</b></label>
+          <input type="password" placeholder="Enter New Password..." required>
+      
+<label for="color themes">Choose a color theme.</label><br><br>
+<select id="color themes" name="color themes">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="orange">Orange</option>
+  <option value="Yellow">Yellow</option>
+  <option value="black">Black</option>
+
+        </div>
+        <div id="ConfirmChangesbtn">
+          <button id="ConfirmChangesbtn"></button>
+        </div>
+      </form>
+<script>
+  document.getElementById("ConfirmChangesbtn").innerHMTL="ConfirmChanges";
+</script>
+</body>
+</html>

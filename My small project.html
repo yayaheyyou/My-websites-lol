@@ -1,0 +1,129 @@
+<html>
+<head>
+<title> Epic form </title>
+</head>
+<body style="background-color: green;">
+
+  <a href="https://www.google.com/search?q=writing&oq=wri&aqs=chrome.0.69i59j69i57j0j0i131i433j0i433j46j69i60l2.1844j0j7&sourceid=chrome&ie=UTF-8" target=_blank>
+  <img border="1" alt="Dancing Polish Cow" src="../../yaya's folder/Writing.jpg" width="100" height="100" style="float:right;">
+  </a>
+
+
+  <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:darkgoldenrod"> Portal: </h1>
+  <a href="#section1" style="color:darkmagenta">Go to Section 1</a>
+  <br>
+  <br>
+  <a href="#section2" style="color: darkmagenta;">Go to Section 2</a>
+  <br>
+  <br>
+    <form>
+      <!--- Section 1 -->
+        <fieldset>
+       <legend></legend>
+       <h1 id="section1" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:yellow"> Section 1 </h1>
+    <label for="fname" style="color: lightcoral; font-size: 19px;">First name:</label>
+    <input type="text" id="fname" name="fname">
+    <br>
+    <br>
+    <label for="lname" style="color: lightcoral; font-size: 19px;">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    <br>
+    <br>
+    <label for="hobbies" style="color: lightcoral; font-size: 19px;">Choose a hobby:</label>
+    <select id="hobbies" name="hobbies">
+      <option value="swimming">Swimming</option>
+      <option value="football">Football</option>
+      <option value="dancing">Dancing</option>
+      <option value="coding/programming">Coding/Programming</option>
+      <option value="none">I don't have a hobby :(</option>
+    </select>
+    <br>
+    <br>
+    <form>
+        <label style="color: lightcoral; font-size: 19px;">What browser are you using?</label>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+          </datalist>
+          <br>
+          <br>
+          <form>
+            <label style="color: lightcoral; font-size: 19px;"> What do you prefer more? </label> <br>
+            <input type="checkbox" id="option1" name="option1" value="House">
+            <label for="option1" style="color: whitesmoke; font-size: 17px;">  A House.  </label> <br> 
+            <input type="checkbox" id="option2" name="option2" value="Car">
+            <label for="option2" style="color: whitesmoke; font-size: 17px;"> A Car. </label><br>
+            <input type="checkbox" id="option3" name="option3" value="Boat">
+            <label for="option3" style="color: whitesmoke; font-size: 17px;"> A Boat. </label>
+          </form>
+    <br>
+    <br>
+    <button type="button" onclick="alert(' Thank you for submitting.')" style="color: blue; animation: ease-in-out;">Submit</button>
+    </fieldset>
+    </form>
+
+      <!--- Section 2 -->
+      <fieldset>
+     <legend></legend>
+     <h1 id="section2" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:yellow"> Section 2 </h1>
+  <label for="fname" style="color: lightcoral; font-size: 19px;">Email address:</label>
+  <input type="text" id="fname" name="fname">
+  <br>
+  <br>
+  <label for="lname" style="color: lightcoral; font-size: 19px;"> Phone number: </label>
+  <input type="text" id="lname" name="lname">
+  <br>
+  <br>
+  <label for="cars" style="color: lightcoral; font-size: 19px;">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="bmw">BMW</option>
+    <option value="nissan">Nissan</option>
+  </select>
+  <br>
+  <br>
+  <form>
+    <label style="color: lightcoral; font-size: 19px;" >Choose your favourite meal:</label>
+      <input list="fav_meal">
+      <datalist id="fav_meal">
+        <option value="Rice">
+        <option value="Chicken">
+        <option value="Steak">
+        <option value="Macaroni">
+        <option value="Cheese">
+        </datalist>
+        </form>
+        <br>
+      
+          <form> 
+          <br>
+          <label style="color: lightcoral; font-size: 19px;" > What's your favorite coding language? </label>
+          <br>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html" style="color: whitesmoke; font-size: 17px;" >HTML</label>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css" style="color: whitesmoke; font-size: 17px;" >CSS</label>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript" style="color: whitesmoke; font-size: 17px;">JavaScript</label>
+          <input type="radio" id="python" name="fav_language" value="Python">
+          <label for="python" style="color: whitesmoke; font-size: 17px;" >Python</label>
+          <input type="radio" id="java" name="fav_language" value="Java">
+          <label for="java" style="color: whitesmoke; font-size: 17px;">Java</label>
+          <br>
+          </form>
+        </form>
+  <br>
+  <br>
+  <button type="button" onclick="alert('Thank you for submitting.')" style="color:blue; animation: ease-in-out;">Submit</button>
+  </fieldset>
+  </form>  
+</body>
+</html>

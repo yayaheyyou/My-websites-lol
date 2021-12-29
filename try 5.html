@@ -1,0 +1,35 @@
+<html>
+    <head>
+        
+    </head>
+<body>
+<button onclick="myFunction()" style="text-align:center;">Click to show the hidden text </button>
+<br>
+<br>
+<div id="mydiv">
+lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta aliquid rem temporibus esse et ut, nemo quisquam quae quasi eveniet, porro soluta voluptas, suscipit minima earum est voluptates dignissimos?
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mydiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+<style>
+#mydiv {
+text-align: center;
+color: cyan;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+size: 34px;
+display:none;
+} 
+body {
+background-color: gold;
+}
+</style>
+</body>
+</html>
